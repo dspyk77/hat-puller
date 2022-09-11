@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html class="page-margin">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pulled From a Hat</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <img class="header-img" src="./assets/hat-puller-logo.png"
+        alt="the words hat puller with the H on hat wearing a top hat">
+        <nav class="font-malayalam">
+          <a href="https://dspyk77.github.io/full-stack-course/" target="_blank">My landing page</a>
+          <a href="https://dspyk77.github.io/full-stack-course/projects/index.html" target="_blank">More web apps</a>
+        </nav>
+    </header>
+    <main class="padding-10 font-poppins">
+      <section>
+        <p>
+          What is the hat puller? Have you ever entered somthing like a raffle where the winner was selected
+          randomly by, "pulling from a hat"? Thats what this app does, papercut free. All you have to do is
+          input what you want on your card(s), this can be whatever you want! Can't deside where you want to eat?
+          make a card for all your favorite grub dealers. Debating on who gets the last cupcake?
+          Make a card for all of your fellow mini cake enthusiast's!
+          After you fill out a card just click the "Add Card" button.
+          Your new card will then displayed on the page. You can add as many cards as your heart desires.
+          Once you're happy with the card's you made, all you have to do is click the "Pick One" button!
+          The winning card then appears! Have fun with it!
+        </p>
+      </section>
+      <section>
+        <label for="card-input">What do you want the card to say?</label>
+        <input id="card-input" type="text">
+        <button onclick="storeCard()">Add Card</button>
+        <input id="display-input" type="number">
+        <button onclick="showCard()">Display input</button>
+        <button onclick="showAllCards()">Show all cards</button>
+      </section>
+      <section id="display-card">
+        <!-- card's display here -->
+
+      </section>
+      <section>
+        <!-- display after atleast two cards are created? -->
+        <button class="btn-margin" onclick="randomCard()">Pick One!</button>
+      </section>
+    </main>
+    <footer>
+      <h1>bare-footer</h1>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,104 @@
+/* ===== spacing ===== */
+.padding-10 {
+  padding: 10px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.padding-left {
+  padding-left: 10px;
+}
+.margin-10 {
+  margin: 10px;
+}
+
+.btn-margin {
+  margin: 5px;
+}
+
+.page-margin {
+  margin: 25px 50px;
+}
+
+.card-box {
+  box-sizing: content-box;
+  width: fit-content;
+  padding: 0px 10px;
+  font-weight: bold;
+  background-color: rgba(197, 203, 221, 0.438);
+}
+
+/* ===== flex ===== */
+.d-flex {
+  display: flex;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.center-content {
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+/* ===== font ===== */
+.italic {
+  font-style: italic;
+}
+
+.font-malayalam {
+  font-family: "Noto Sans Malayalam", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+/* ===== header ===== */
+.header-img {
+  max-width: 300px;
+}
+/* ===== nav ===== */
+nav {
+  display: flex;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+nav a {
+  display: inline-flex;
+  flex-direction: row;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Links - change color on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main {
+  border: 5px solid;
+  background-color: rgba(241, 233, 233, 0.438);
+}
+
+button {
+  background-color: #333;
+  margin-bottom: 5px;
+  color: #f2f2f2;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.card-display {
+  border: 1px solid black;
+}
