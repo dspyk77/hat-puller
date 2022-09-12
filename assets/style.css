@@ -10,10 +10,18 @@
 .padding-left {
   padding-left: 10px;
 }
+
+.padding-top-bottom {
+  padding: 10px 0px;
+}
+
 .margin-10 {
   margin: 10px;
 }
 
+.margin-top {
+  margin-top: 5px;
+}
 .btn-margin {
   margin: 5px;
 }
@@ -57,6 +65,9 @@
 
 .font-poppins {
   font-family: "Poppins", sans-serif;
+}
+.underline {
+  text-decoration: underline;
 }
 /* ===== header ===== */
 .header-img {
