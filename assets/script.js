@@ -6,7 +6,7 @@ var displayInput = document.querySelector("#display-input")
 var displayCard = document.querySelector("#display-card")
 // array input being stored in
 // var cardArr = ["a", "b", "c"] for testing 
-var cardArr = ["a", "b", "c"]
+var cardArr = []
 
 function storeCard() {
   cardArr.push(cardInput.value) 
@@ -21,10 +21,10 @@ function clearCards() {
 }
 // idea -- make function to display the input number in the array + 1 *No.(item number) input*
 function showCard() {
-  var x = cardArr.length + 1
+  clearCards()
   displayCard.insertAdjacentHTML("beforeend", `
   <div class="card-display margin-10 card-box">
-    <p>No.${cardArr[displayInput.value]}</p>
+    <p>${cardArr[displayInput.value]}</p>
   </div>
   `
   )
@@ -45,12 +45,14 @@ function showAllCards() {
 // then display the card 
 function randomCard() {
   clearCards()
-  var randomNumber = getRandomInt(0, cardArr.length) 
+  var randomNumber = getRandomInt(1, cardArr.length) 
+  var randomArrNum = randomNumber - 1
   console.log(randomNumber)
+  console.log(randomArrNum)
   displayCard.insertAdjacentHTML("beforeend", `
   <div class="card-display margin-10 card-box">
     <h4>The card selected is...</h4>
-    <p>${cardArr[randomNumber]}!</p>
+    <p>${cardArr[randomArrNum]}!</p>
   </div>
   `
   )
