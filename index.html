@@ -41,23 +41,30 @@
         </p>
       </section>
       <section>
-        <label for="card-input">What do you want the card to say?</label><br>
-        <input id="card-input" type="text" onchange="storeCard()">
-        <button onclick="storeCard()">Add Card</button>
-        <button onclick="showAllCards()">Show all cards</button><br>
+        <div>
+          <label for="card-input">What do you want the card to say?</label>
+          <input id="card-input" type="text" onchange="storeCard()">
+          <button onclick="storeCard()">Add Card</button>
+          <button onclick="showAllCards()">Show all cards</button><br>
+        </div>
+        <div>
+          <label for="del-card">Need to delete one?</label>
+          <input type="number" id="del-card" onclick="showAllCards()">
+          <button onclick="delCard()">Delete Card</button>
+        </div>
         <!-- <input id="display-input" type="number">
         <button onclick="showCard()">Display input</button><br> -->
-        <!-- implement transfor  -->
         <span style="color: red;" id="error-msg" hidden>Selection not in range</span>
-
       </section>
+      <img id="pop-gif" class="d-none" src="./assets/magic-shuffle.gif" alt="card magic trick GIF">
       <section id="display-card">
         <!-- card's & GIF display here -->
-        <img id="pop-gif" class="d-none" src="./assets/magic-shuffle.gif" alt="card magic trick GIF">
+        
       </section>
+      
       <section>
         <!-- display after atleast two cards are created? -->
-        <button id="pick-one-btn" hidden class="btn-margin" onclick="showGif()">Pick One!</button>
+        <button id="pick-one-btn" hidden class="btn-margin" onclick="showRandomCard()">Pick One!</button>
       </section>
     </main>
     <footer class="margin-top">

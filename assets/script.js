@@ -46,9 +46,20 @@ function showCard() {
     );
   } else {
     clearCards();
-    displayErrorMsg.hidden = false;
+    displayErrorMsg.hidden = false; 
     setTimeout(hideErrorMsg, 2000);
   }
+}
+
+function delCard() {
+  var deleteIndex = document.querySelector("#del-card")
+  if (deleteIndex.value >= 0 && deleteIndex.value <= cardArr.length - 1) {
+  cardArr.splice(deleteIndex.value, 1);
+  showAllCards()
+} else {
+  displayErrorMsg.hidden = false;
+  setTimeout(hideErrorMsg, 2000);
+}
 }
 
 function showAllCards() {
@@ -58,7 +69,7 @@ function showAllCards() {
       "beforeend",
       `
       <div class="card-display margin-10 card-box">
-        <p>${cardArr[i]}</p>
+        <p>No: ${i} - ${cardArr[i]}</p>
       </div>
     `
     );
@@ -69,10 +80,11 @@ function hideGif() {
   popGif.style.display = "none";
 }
 // show GIF
-function showGif() {
+function showRandomCard() {
+  clearCards()
   popGif.style.display = "block";
   setTimeout(hideGif, 2800);
-  setTimeout(randomCard, 2800);
+  setTimeout(randomCard, 2900);
 }
 
 function randomCard() {
