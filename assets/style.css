@@ -43,6 +43,9 @@
   display: flex;
 }
 
+.d-inline-flex {
+  display: inline-flex;
+}
 .center-items {
   align-items: center;
 }
@@ -53,6 +56,10 @@
 
 .flex-col {
   flex-direction: column;
+}
+
+.no-grow {
+  flex-grow: 0;
 }
 /* ===== font ===== */
 .italic {
@@ -112,4 +119,12 @@ button:hover {
 
 .card-display {
   border: 1px solid black;
+}
+
+#error-msg {
+  transition-timing-function: ease-in-out;
+}
+
+.d-none {
+  display: none;
 }

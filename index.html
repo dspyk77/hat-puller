@@ -20,11 +20,11 @@
     <header>
       <img class="header-img" src="./assets/hat-puller-logo.png"
         alt="the words hat puller with the H on hat wearing a top hat">
-        <nav class="font-malayalam">
-          <a href="https://dspyk77.github.io/full-stack-course/" target="_blank">My landing page</a>
-          <a href="https://dspyk77.github.io/full-stack-course/projects/index.html" target="_blank">More web apps</a>
-          <a href="./game-ideas/index.html" target="_blank">Game ideas!</a>
-        </nav>
+      <nav class="font-malayalam">
+        <a href="https://dspyk77.github.io/full-stack-course/" target="_blank">My landing page</a>
+        <a href="https://dspyk77.github.io/full-stack-course/projects/index.html" target="_blank">More web apps</a>
+        <a href="./game-ideas/index.html" target="_blank">Game ideas!</a>
+      </nav>
     </header>
     <main class="padding-10 font-poppins">
       <section>
@@ -41,20 +41,23 @@
         </p>
       </section>
       <section>
-        <label for="card-input">What do you want the card to say?</label>
-        <input id="card-input" type="text">
+        <label for="card-input">What do you want the card to say?</label><br>
+        <input id="card-input" type="text" onchange="storeCard()">
         <button onclick="storeCard()">Add Card</button>
-        <input id="display-input" type="number">
-        <button onclick="showCard()">Display input</button>
-        <button onclick="showAllCards()">Show all cards</button>
+        <button onclick="showAllCards()">Show all cards</button><br>
+        <!-- <input id="display-input" type="number">
+        <button onclick="showCard()">Display input</button><br> -->
+        <!-- implement transfor  -->
+        <span style="color: red;" id="error-msg" hidden>Selection not in range</span>
+
       </section>
       <section id="display-card">
-        <!-- card's display here -->
-
+        <!-- card's & GIF display here -->
+        <img id="pop-gif" class="d-none" src="./assets/magic-shuffle.gif" alt="card magic trick GIF">
       </section>
       <section>
         <!-- display after atleast two cards are created? -->
-        <button class="btn-margin" onclick="randomCard()">Pick One!</button>
+        <button id="pick-one-btn" hidden class="btn-margin" onclick="showGif()">Pick One!</button>
       </section>
     </main>
     <footer class="margin-top">
