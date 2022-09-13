@@ -13,15 +13,32 @@ var cardArr = [];
 
 // adds input to the array
 function storeCard() {
-  cardArr.push(cardInput.value);
+  
+  console.log("[Store Card]")  
+  console.log(cardInput.value)
+  console.log("is blank?")
+  console.log(cardInput.value == "")
+  if (cardInput.value == "") {
+    return
+  }
+  console.log("working")
+  cardArr.push(cardInput.value)
+  console.log("cardArr before:")
+  console.log(cardArr)
 
-  console.log(cardArr);
-  cardInput.value = "";
+  
+
+  console.log("cardArr after:")
+  console.log(cardArr)
+
+   
+  cardInput.value = ""
   if (cardArr.length >= 2) {
     pickOneBtn.hidden = false;
   } else {
     pickOneBtn.hidden = true;
   }
+
 }
 // removes all cards
 function clearCards() {
