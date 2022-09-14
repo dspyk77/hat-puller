@@ -151,6 +151,7 @@ button:hover {
   }
   .page-margin {
     margin: 25px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 640px) {
