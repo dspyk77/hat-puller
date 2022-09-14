@@ -149,14 +149,15 @@ button:hover {
   nav a {
     border:rgb(0, 0, 0) solid 1px;
   }
-  .page-margin {
-    margin: 25px;
-    margin-bottom: 50px;
-  }
+  
 }
 @media screen and (max-width: 640px) {
   .card-gif-responsive {
     min-width: 225px;
     max-width: 520px;
+  }
+  .page-margin {
+    margin: 25px;
+    margin-bottom: 200px;
   }
 }
