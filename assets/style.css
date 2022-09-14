@@ -133,3 +133,29 @@ button:hover {
   color: red;
   display: none;
 }
+
+@media screen and (max-width: 360px) { 
+  .header-img {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-img {
+    max-width: 200px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    border:rgb(0, 0, 0) solid 1px;
+  }
+  .page-margin {
+    margin: 25px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .card-gif-responsive {
+    min-width: 225px;
+    max-width: 520px;
+  }
+}

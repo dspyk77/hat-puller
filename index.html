@@ -42,21 +42,23 @@
       </section>
       <section>
         <div>
-          <label for="card-input">What do you want the card to say?</label>
+          <label for="card-input">What do you want the card to say?</label><br>
           <input id="card-input" type="text" onchange="storeCard()">
           <button onclick="storeCard()">Add Card</button>
           <button onclick="showAllCards()">Show all cards</button><br>
         </div>
         <div>
-          <label for="del-card">Need to delete one?</label>
-          <input type="number" id="del-card" onclick="showAllCards()">
+          <label for="del-card">Need to delete one?</label><br>
+          <input type="number" min="0" id="del-card" onclick="showAllCards()">
           <button onclick="delCard()">Delete Card</button>
         </div>
         <!-- <input id="display-input" type="number">
         <button onclick="showCard()">Display input</button><br> -->
         <span style="color: red;" id="error-msg" hidden>Selection not in range</span>
       </section>
-      <img id="pop-gif" class="d-none" src="./assets/magic-shuffle.gif" alt="card magic trick GIF">
+      <section class="d-flex">
+        <img id="pop-gif" class="d-none card-gif-responsive" src="./assets/magic-shuffle.gif" alt="card magic trick GIF">
+      </section>
       <section id="display-card">
         <!-- card's & GIF display here -->
         
