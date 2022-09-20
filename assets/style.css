@@ -38,6 +38,10 @@
   background-color: rgba(197, 203, 221, 0.438);
 }
 
+.num-input {
+  max-width: 40px;
+ }
+
 /* ===== flex ===== */
 .d-flex {
   display: flex;
@@ -158,6 +162,6 @@ button:hover {
   }
   .page-margin {
     margin: 25px;
-    margin-bottom: 200px;
+    margin-bottom: 500px;
   }
 }

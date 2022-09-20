@@ -15,6 +15,7 @@ function storeCard() {
   var inputIsBlank = (cardInput.value.trim() === "")
   if (inputIsBlank) {
     console.error("Input is blank")
+    console.log(inputIsBlank)
     return false
   }
 
